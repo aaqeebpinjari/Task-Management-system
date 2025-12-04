@@ -350,7 +350,7 @@ crud/
 - Ensure `JWT_SECRET` is set in `.env`
 - Use a strong, random string
 
-### Frontend Issues
+### Possible Issues
 
 **API Connection Error**:
 - Verify backend server is running
@@ -360,29 +360,5 @@ crud/
 **Build Errors**:
 - Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
 - Check Node.js version (should be v18+)
-
-### Docker Issues
-
-**Container Won't Start**:
-- Check Docker logs: `docker-compose logs`
-- Ensure ports are not already in use
-- Verify `.env` file exists and is properly configured
-
-## 📝 Notes
-
-- The application uses JWT tokens that expire after 7 days
-- Passwords must be at least 6 characters long
-- Task titles are limited to 200 characters
-- Task descriptions are limited to 1000 characters
-- Default pagination shows 6 tasks per page (cards) or 10 per page (table)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 
 ---
