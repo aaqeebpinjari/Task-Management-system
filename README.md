@@ -137,6 +137,10 @@ npm start
 ### Authentication
 
 - `POST /api/auth/signup` - Register a new user
+--- sample account to use
+  - Email: `abc@gmail.com`
+  - Password: `abc@123` 
+
   ```json
   {
     "email": "user@example.com",
