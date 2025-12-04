@@ -1,4 +1,5 @@
 # Task Management Application
+
 A full-stack task management application built with React, Node.js, Express, and MongoDB. Features user authentication, CRUD operations, filtering, sorting, pagination, and dark mode support.
 
 ## 🚀 Features
@@ -29,47 +30,6 @@ Before you begin, ensure you have the following installed:
 - **npm** or **yarn** package manager
 - **Git** (optional, for cloning the repository)
 
-
-## 📦 Project Structure
-```
-crud/
-├── backend/                    # Node.js + Express backend
-│   ├── models/                # MongoDB models
-│   │   ├── User.js           # User schema
-│   │   └── Task.js           # Task schema
-│   ├── routes/                # API routes
-│   │   ├── auth.js           # Authentication endpoints
-│   │   └── tasks.js          # Task CRUD endpoints
-│   ├── middleware/            # Express middleware
-│   │   ├── auth.js           # JWT authentication
-│   │   └── validation.js     # Request validation
-│   ├── server.js             # Main server file
-│   ├── package.json          # Dependencies
-│
-├── frontend/                  # React frontend
-│   ├── src/
-│   │   ├── components/       # React components
-│   │   │   ├── TaskCard.jsx  # Task card display
-│   │   │   ├── TaskModal.jsx # Create/Edit modal
-│   │   │   └── TaskTable.jsx # Table view
-│   │   ├── context/          # React contexts
-│   │   │   ├── AuthContext.jsx  # Auth state
-│   │   │   └── ThemeContext.jsx # Dark mode state
-│   │   ├── pages/            # Page components
-│   │   │   ├── Login.jsx    # Login page
-│   │   │   ├── Signup.jsx   # Signup page
-│   │   │   └── Dashboard.jsx # Main dashboard
-│   │   ├── utils/            # Utility functions
-│   │   │   └── api.js       # API calls
-│   │   ├── App.jsx          # Main app component
-│   │   └── main.jsx         # Entry point
-│   ├── package.json         # Dependencies
-│   └── vite.config.js       # Vite configuration
-│
-├── README.md                 # Full documentation
-├── QUICKSTART.md            # Quick setup guide
-└── .gitignore              # Git ignore rules
-```
 
 ## 🛠️ Installation & Setup
 
