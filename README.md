@@ -30,6 +30,10 @@ Before you begin, ensure you have the following installed:
 - **npm** or **yarn** package manager
 - **Git** (optional, for cloning the repository)
 
+## Screenshots
+<img width="1912" height="830" alt="image" src="https://github.com/user-attachments/assets/cfc5a7d5-888b-4616-a84c-9c27d7a92674" />
+
+<img width="1916" height="820" alt="image" src="https://github.com/user-attachments/assets/ca48fa00-cba1-4c0b-85b7-3a64700689a6" />
 
 ## 🛠️ Installation & Setup
 
@@ -192,62 +196,6 @@ Authorization: Bearer <your-jwt-token>
 
 - `DELETE /api/tasks/:id` - Delete a task
 
-## 🌐 Deployment
-
-### Backend Deployment (Render)
-
-1. **Create a Render Account**: Sign up at [render.com](https://render.com)
-
-2. **Create a New Web Service**:
-   - Connect your GitHub repository
-   - Select the `backend` directory as the root directory
-   - Build command: `npm install`
-   - Start command: `npm start`
-   - Environment: `Node`
-
-3. **Set Environment Variables**:
-   - `PORT` - Will be automatically set by Render
-   - `MONGODB_URI` - Your MongoDB connection string
-   - `JWT_SECRET` - A strong random string
-   - `NODE_ENV` - `production`
-
-4. **Deploy**: Click "Create Web Service" and wait for deployment
-
-### Frontend Deployment (Vercel)
-1. **Create a Vercel Account**: Sign up at [vercel.com](https://vercel.com)
-2. **Import Project**:
-   - Connect your GitHub repository
-   - Select the `frontend` directory as the root directory
-   - Framework Preset: `Vite`
-
-3. **Set Environment Variables**:
-   - `VITE_API_URL` - Your backend API URL (e.g., `https://your-backend.onrender.com/api`)
-
-4. **Deploy**: Click "Deploy" and wait for deployment
-
-### Alternative: Firebase Hosting (Frontend)
-
-1. **Install Firebase CLI**:
-   ```bash
-   npm install -g firebase-tools
-   ```
-
-2. **Login to Firebase**:
-   ```bash
-   firebase login
-   ```
-
-3. **Initialize Firebase**:
-   ```bash
-   cd frontend
-   firebase init hosting
-   ```
-
-4. **Build and Deploy**:
-   ```bash
-   npm run build
-   firebase deploy
-   ```
 
 ### MongoDB Atlas Setup
 
@@ -279,8 +227,6 @@ crud/
 │   │   └── validation.js    # Request validation middleware
 │   ├── server.js            # Express server setup
 │   ├── package.json
-│   ├── Dockerfile
-│   └── docker-compose.yml
 │
 ├── frontend/
 │   ├── src/
